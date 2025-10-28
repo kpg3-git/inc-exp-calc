@@ -32,13 +32,11 @@
 6. The total income amount, total expense amount and net balance amount will be displayed on top-center of screen and it is automatically updated after each entries are saved.
 
 # Preview
-1. **Desktop View**
- ![Income & Expense calculator](Preview/preview1.png)
- ![Entry Lists](Preview/preview2.png)
-
-2. **Mobile view**
- ![Income & Expense calculator](Preview/preview3.png)
- ![Entry Lists](Preview/preview4.png)
+**Desktop View** and **Mobile view**
+1. ![Income & Expense calculator](Preview/preview1.png)
+2. ![Entry Lists](Preview/preview2.png)
+3. ![Income & Expense calculator](Preview/preview3.png)
+4. ![Entry Lists](Preview/preview4.png)
 
 
 
