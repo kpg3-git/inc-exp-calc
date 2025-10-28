@@ -33,12 +33,12 @@
 
 # Preview
 1. **Desktop View**
-1. ![Income & Expense calculator](Preview/preview1.png)
-2. ![Entry Lists](Preview/preview2.png)
+ ![Income & Expense calculator](Preview/preview1.png)
+ ![Entry Lists](Preview/preview2.png)
 
 2. **Mobile view**
-1. ![Income & Expense calculator](Preview/preview3.png)
-2. ![Entry Lists](Preview/preview4.png)
+ ![Income & Expense calculator](Preview/preview3.png)
+ ![Entry Lists](Preview/preview4.png)
 
 
 
