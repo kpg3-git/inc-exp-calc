@@ -1,0 +1,310 @@
+
+ body {
+  padding: 20px;
+  font-family: arial;  
+  background: linear-gradient(to top,#cfe2f3,#d3e4f4,#d8e7f5,#ddeaf6,#e2edf7,#e7f0f9,#ebf3fa,#f0f6fb,#f5f9fc,#fafcfd,#ffffff,#cfe2f3); 
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.operationIncExp {
+  display: flex;
+  flex-direction: column;
+  background: #fff9fa;
+  border-radius: 60px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+  width: 90%;
+  max-width: 600px;
+  padding: 25px;
+}
+
+.operationIncExp:hover {
+  border: 1px solid white;
+}
+
+h1 {
+  text-align: center;
+  color: #97bcd7;
+  margin: 0;
+  padding: 20px;
+  font-family: "Sofia Sans";
+}
+
+h1:hover {
+  background-color: #97bcd7;
+  color:white;
+}
+
+/* Top content */
+
+.netBalanceIncExp {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  background: #e2ebf3;
+  color: #3b8fca;
+  font-size: 22px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-family: "Winky Rough";
+}
+
+.rupeesInc {
+  font-family: "Comic Relief";
+  color: rgba(13, 176, 122, 0.916);
+  font-size: 18px;
+}
+
+.rupeesExp {
+  font-family: "Comic Relief";
+  color: rgb(234, 35, 35);
+  font-size: 18px;
+}
+
+.rupeesBal {
+  font-family: "Comic Relief";
+  color:rgb(180, 66, 176);
+  font-size: 18px;
+}
+
+/* User interaction */
+
+.userEntry {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputFromUser {
+  padding: 10px 8px;
+  border: 2px solid #3b8fca;
+  font-family: "Varela Round";
+  border-radius: 10px;
+}
+
+.inputFromUser:focus {
+  color: rgb(255, 0, 191);
+  outline: none;
+}
+
+.inputFromUser:hover{
+  border: 3px solid rgb(205, 122, 184);
+}
+
+.totalIncome {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 10px;
+}
+
+.totalIncome:hover {
+ border: 1px solid rgba(165, 230, 208, 0.916);
+ border-radius: 10px;
+ box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+}
+
+.totalExpense {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 10px;
+}
+
+.totalExpense:hover {
+  border: 1px solid rgb(231, 185, 185);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+}
+
+.netBalance {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 10px;
+}
+
+.netBalance:hover {
+  border: 1px solid rgb(203, 189, 203);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+}
+
+.question {
+  font-family: "Varela Round";
+  color: #3b8fca;
+  font-weight: bold;
+}
+
+/* Buttons */
+
+.saveDetails {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.save {
+  background: #5ba7eb;
+  color: white;
+  border: none;
+  padding: 13px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Varela Round";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.save:hover {
+  background: white;
+  border: 2px solid #5ba7eb;
+  color: #5ba7eb;
+}
+
+.reset {
+  background: white;
+  border: 1px solid #5ba7eb;
+  color: #5ba7eb;
+  padding: 13px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Varela Round";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reset:hover {
+  background: #5ba7eb;
+  color: white;
+  border: 2px solid #5ba7eb;
+}
+
+/* Entry Lists */
+
+h2 {
+  text-align: center;
+  background-color: #97bcd7;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-family: "Sofia Sans";
+}
+
+h2:hover {
+  border: 2px solid #97bcd7;
+  letter-spacing: 4px;
+}
+
+.radioFilters {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-weight: bold;
+  background: #e2ebf3;
+  color: #3b8fca;
+  padding: 20px;
+}
+
+.radioFilters:hover {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+.unOrderedLists {
+  list-style: none;
+  padding: 0;
+}
+
+.lists li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Patrick Hand";  
+  font-size: 18px;
+}
+
+.lists li.income {
+  color: rgba(13, 176, 122, 0.916);
+  background-color: white;
+}
+
+.lists li.income:hover {
+  /* background-color: ; */
+  border: 2px solid rgba(107, 219, 182, 0.916); 
+}
+
+.lists li.expense {
+  color: rgb(234, 35, 35);
+  background-color: white;
+}
+
+.lists li.expense:hover {
+  /* background-color: ; */
+  border: 2px solid rgb(214, 114, 114);
+}
+
+.lists button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Varela Round";
+  color: #3b8fca;
+}
+
+@media (max-width: 600px) {
+  .netBalanceIncExp {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .totalIncome{
+    flex-direction: row;
+    font-size: large;
+    padding: 0 15px;
+  }
+
+  .totalExpense {
+    flex-direction: row;
+    font-size: large;
+    padding: 0 15px;
+  }
+
+  .netBalance {
+    flex-direction: row;
+    font-size: large;
+    padding: 0px 15px;
+  }
+
+  h1 {
+    font-size:x-large;
+  }
+
+  .rupeesInc {
+    font-size: medium;
+  }
+
+  .rupeesExp {
+    font-size: medium;
+  }
+
+  .rupeesBal {
+    font-size: medium;
+  }
+}
+

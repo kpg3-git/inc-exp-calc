@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income and Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="calc">
+  <div class="operationIncExp">
+    <h1>Income and Expense calculator</h1>
+<!-- Showing the total income, total expenses, and net balance at the top. -->
+    <div class="netBalanceIncExp">
+      <div class="totalIncome">
+        <label>Total Income</label>
+        <span class="rupeesInc" id="totalInc">Rs.0</span>
+      </div>
+      <div class="totalExpense">
+        <label>Total Expense</label>
+        <span class="rupeesExp" id="totalExp">Rs.0</span>
+      </div>
+      <div class="netBalance">
+        <label>Net Balance</label>
+        <span class="rupeesBal" id="netBal">Rs.0</span>
+      </div>
+    </div>
+<!-- user interaction -->
+    <form class="userEntry" id="userEntries">
+      <label class="question">Choose Income / Expense from the lists</label>
+      <select id="selectOptn" class="inputFromUser" required>
+        <option disabled selected>Income / Expense</option>
+        <option value="inc">Income</option>
+        <option value="exp">Expense</option>
+      </select>
+<!--  Input fields for entering income and expense details (e.g., description, amount) -->
+      <label class="question">Type the Description</label>
+      <input type="text" class="inputFromUser" id="description" placeholder="Eg Grocery 🛒">
+
+      <label class="question">Enter the Amount</label>
+      <input type="number" class="inputFromUser" id="amount" placeholder="Eg 4320 💰">
+
+      <div class="saveDetails">
+        <button class="save" type="submit">Save</button>
+        <button class="reset" type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+<!-- Radio Button 3 filters [ “all”, “income”, “expense” ] -->
+  <div class="display">
+    <h2>Entry Lists</h2>
+    <div class="radioFilters"> 
+      <label><input type="radio" name="radioBtn" value="all" checked>All</label> 
+      <label><input type="radio" name="radioBtn" value="income">Income</label>
+      <label><input type="radio" name="radioBtn" value="expense">Expense</label>
+    </div>
+<!-- Saved lists -->
+    <div class="lists">
+      <ul class="unOrderedLists" id="userEntryLists">
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
